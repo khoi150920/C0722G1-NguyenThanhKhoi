@@ -1,0 +1,48 @@
+Chuyển Đổi Nhiệt Độ.
+BEGIN
+    INPUT C
+    F = ( 9 * C )/5 +32
+    DISPLAY F
+END
+-----------------------------
+Chuyển Đổi Tiền Tệ.
+BEGIN
+    INPUT USD
+    USD = 23000*USD
+    DISPLAY USD
+END
+-----------------------------
+Tìm Số Lớn Nhất .
+BEGIN
+    INPUT	a, b, c
+    	if a > b
+    		max = a
+    	else
+    		max = b
+    	if c > max
+    		max = c
+    	DISPLAY max
+END
+-----------------------------
+Điểm Trung Bình.
+BEGIN
+	INPUT a, b, c
+	SUM = (a + b + c)/3
+	DISPLAY SUM
+END
+------------------------------
+Mô tả thuật toán có cấu trúc điều kiện.
+BEGIN
+    INPUT X
+    IF X >= 75
+    DISPLAY RANK A
+    ELSE X <=60
+    DISPLAY RANK B
+    IF X <= 45
+    DISPLAY RANK C
+    ELSE X <=35
+    DISPLAY RANK D
+    IF X < 30
+    DISPLAY RANK E
+END
+------------------------------
