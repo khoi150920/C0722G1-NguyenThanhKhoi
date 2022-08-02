@@ -1,3 +1,4 @@
+EM LỠ LÀM LƯU ĐỒ RIÊNG TRƯỚC KHI ANH THÔNG BÁO Ạ.
 Chuyển Đổi Nhiệt Độ.
 BEGIN
     INPUT C
