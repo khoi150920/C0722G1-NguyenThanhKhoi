@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" value="number" id="st1">
+<input type="number" value="number" id="st2">
+<button onclick="cong()" id="cong">CONG(+)</button>
+<button onclick="tru()" id="tru">TRU(-)</button>
+<button onclick="nhan()" id="nhan">NHAN(X)</button>
+<button onclick="chia()" id="chia">CHIA(/)</button>
+<br>
+<h4>Result:</h4><span type="text" id="ketqua"></span>
+<script>
+    function cong() {
+        let a1 = document.getElementById('st1').value;
+        let a2 = document.getElementById('st2').value;
+        document.getElementById('ketqua').innerHTML = parseInt(a1) + parseInt(a2);
+    }
+
+    function tru() {
+        let b1 = document.getElementById('st1').value;
+        let b2 = document.getElementById('st2').value;
+        document.getElementById('ketqua').innerHTML = parseInt(b1) - parseInt(b2);
+    }
+
+    function nhan() {
+        let b1 = document.getElementById('st1').value;
+        let b2 = document.getElementById('st2').value;
+        document.getElementById('ketqua').innerHTML = parseInt(b1) * parseInt(b2);
+    }
+
+    function chia() {
+        let b1= document.getElementById('st1').value;
+        let b2= document.getElementById('st2').value;
+        document.getElementById('ketqua').innerHTML = parseInt(b1) / parseInt(b2);
+    }
+</script>
+</body>
+</html>
