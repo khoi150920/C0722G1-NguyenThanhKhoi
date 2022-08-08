@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<center>
 <body>
 <label>
     <tr>
@@ -16,24 +17,50 @@
     </tr>
     <tr>
         <td><input type="number" value="tien" ID="nhapvao"></td>
-        <select>
-            <td><option value="VND">VietNam</option></td>
-            <td><option value="USD">My</option></td>
+        <select id="o1">
+            <td>
+                <option value="VND">VND</option>
+            </td>
+            <td>
+                <option value="USD">USD</option>
+            </td>
         </select>
-        <select>
-            <td><option value="USD">My</option></td>
-            <td><option value="VND">VietNam</option></td>
+        <select id="o2">
+            <td>
+                <option value="USD">USD</option>
+            </td>
+            <td>
+                <option value="VND">VND</option>
+            </td>
         </select>
-        <td><button onclick="anvao" id="tt">Convert</button></td>
+        <td>
+            <button onclick="swapMoney()" id="tt">Convert</button>
+        </td>
+        <br>
+        <p>SO TIEN LA:</p><span type="text" id="ketqua"></span>
     </tr>
     <script>
         function swapMoney() {
             let a = document.getElementById('nhapvao').value;
-            let b = document.getElementById('')
+            let b = document.getElementById('o1').value;
+            let c = document.getElementById('o2').value;
+            if (b == "VND" && c == "USD") {
+                document.getElementById('ketqua').innerHTML = parseInt(a) / 23000 + '$';
+            }
+            if (b == "USD" && c == "VND") {
+                document.getElementById('ketqua').innerHTML = parseInt(a) * 23000 + "VND";
+            }
+            if (b == "VND" && c == "VND") {
+                document.getElementById('ketqua').innerHTML = parseInt(a) + "VND";
+            }
+            if (b == "USD" && c == "USD") {
+                document.getElementById('ketqua').innerHTML = parseInt(a) + "USD";
+            }
         }
 
 
     </script>
 </label>
 </body>
+</center>
 </html>
