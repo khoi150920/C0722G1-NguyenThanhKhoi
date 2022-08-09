@@ -2,9 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<input type="text" id="display">
+<button onclick="check()">Tinh So Ngay</button>
+<br>
+<p id="resut">...</p>
+<script>
+    function check() {
+        let month = document.getElementById('display').value;
+        switch (parseInt(month)) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                document.getElementById('resut').innerHTML = 'Thang' + month + 'Co 31 Ngay.';
+                break;
+            case 2:
+                document.getElementById('resut').innerHTML = 'Thang' + month + 'Co 28 Ngay.';
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                document.getElementById('resut').innerHTML = 'Thang' + month + 'Co 30 Ngay';
+                break;
+            default:
+                document.getElementById('resut').innerHTML = 'Khong Co Thang Nay';
+        }
+    }
+</script>
+
 </body>
 </html>

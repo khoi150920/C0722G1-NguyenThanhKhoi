@@ -2,9 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
+<style>
+    table, tr  th {
+        border: solid black 1px;
+        border-collapse: collapse;
+    }
+
+</style>
 <body>
-$END$
+
+<table>
+    <tr>
+        <td colspan="4"><input  type="text" id="display"></td>
+    </tr>
+
+    <tr>
+        <th><button onclick="mot()">1</button></th>
+        <th><button onclick="hai()">2</button></th>
+        <th><button onclick="ba()">3</button></th>
+        <th><button onclick="cong()">+</button></th>
+    </tr>
+
+    <tr>
+        <th><button onclick="bon()">4</button></th>
+        <th><button onclick="nam()">5</button></th>
+        <th><button onclick="sau()">6</button></th>
+        <th><button onclick="tru()">-</button></th>
+    </tr>
+
+    <tr>
+        <th><button onclick="bay()">7</button></th>
+        <th><button onclick="tam()">8</button></th>
+        <th><button onclick="chin()">9</button></th>
+        <th><button onclick="nhan()">*</button></th>
+    </tr>
+
+    <tr>
+        <th><button onclick="xoa()">C</button></th>
+        <th><button onclick="khong()">0</button></th>
+        <th><button onclick="bang()">=</button></th>
+        <th><button onclick="chia()">/</button></th>
+    </tr>
+</table>
+
+<script>
+    function mot() {
+        let str = document.getElementById('display').value;
+        document.getElementById('display').value = str +'1';
+    }
+    function hai() {
+        let str = document.getElementById('display').value;
+        document.getElementById('display').value = str + '2';
+    }
+    function ba() {
+        let str = document.getElementById('display').value;
+        document.getElementById('display').value = str + '3';
+    }
+    function cong () {
+        let str = document.getElementById('display').value;
+        document.getElementById('display').value = str + '+';
+    }
+    function bon() {
+        let str = document.getElementById('display').value;
+        document.getElementById('display').value = str + '4';
+    }
+    function nam() {
+        let str = document.getElementById('display').value;
+        document.getElementById('display').value = str + '5';
+    }
+    function sau () {
+        let str = document.getElementById('display').value;
+        document.getElementById('display').value = str + '6';
+    }
+    function tru () {
+        let str = document.getElementById('display').value;
+        document.getElementById('display').value = str + '-';
+    }
+    function bay() {
+        let str = document.getElementById('display').value;
+        document.getElementById('display').value = str + '7';
+    }
+    function tam() {
+        let str = document.getElementById('display').value;
+        document.getElementById('display').value = str + '8';
+    }
+    function chin() {
+        let str = document.getElementById('display').value;
+        document.getElementById('display').value = str + '9';
+    }
+    function nhan() {
+        let str = document.getElementById('display').value;
+        document.getElementById('display').value = str + '*';
+    }
+    function khong() {
+        let str = document.getElementById('display').value;
+        document.getElementById('display').value = str + '0';
+    }
+    function bang() {
+        let str = document.getElementById('display').value;
+        document.getElementById('display').value = eval(str) ;
+    }
+
+    function chia() {
+        let str = document.getElementById('display').value;
+        document.getElementById('display').value = str + '/';
+    }
+    function xoa() {
+        document.getElementById('display').value = +'';
+    }
+</script>
 </body>
 </html>
