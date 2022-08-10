@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<H3>Cuoc DT</H3> <br>
+<p>30p dau :2000/1p</p> <br>
+<p>30p sau:4000/1p</p> <br>
+<p>60 phut :4500/p</p> <br>
+<script>
+    let time=parseFloat(prompt('Nhap So Phut Thoai:'))
+        if (time<=30){
+            document.write('So Tien Can Phai Thanh Toan La:'+time*2000+"VND");
+        }else if(time<=60){
+            document.write('so Tien Can Phai Thanh Toan La:'+time+4000+"VND");
+        }else if(time>60) {
+            document.write('So Tien Can Phai Thanh Toan La'+time+4500+"VND");
+        }
+</script>
+</body>
+</html>

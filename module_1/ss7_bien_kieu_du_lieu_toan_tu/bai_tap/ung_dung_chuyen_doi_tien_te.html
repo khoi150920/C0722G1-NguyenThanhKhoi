@@ -47,13 +47,13 @@
             if (b == "VND" && c == "USD") {
                 document.getElementById('ketqua').innerHTML = parseInt(a) / 23000 + '$';
             }
-            if (b == "USD" && c == "VND") {
+            else{
                 document.getElementById('ketqua').innerHTML = parseInt(a) * 23000 + "VND";
             }
             if (b == "VND" && c == "VND") {
                 document.getElementById('ketqua').innerHTML = parseInt(a) + "VND";
             }
-            if (b == "USD" && c == "USD") {
+            else {
                 document.getElementById('ketqua').innerHTML = parseInt(a) + "USD";
             }
         }

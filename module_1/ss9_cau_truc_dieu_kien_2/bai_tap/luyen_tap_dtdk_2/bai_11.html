@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let thuThapCaNhan=parseFloat(prompt('Nhap Thu Nhap Ca Nhan'));
+        switch (thuThapCaNhan) {
+            case 1<=60:
+                alert(thuThapCaNhan*0.05+ 'So Thue Ban Phai Nop');
+                break;
+            case 60<=120:
+                alert(thuThapCaNhan*0.1+ 'So Thue Ban Phai Nop');
+                break;
+            case 120<=216:
+                alert(thuThapCaNhan*0.15+ 'So Thue Ban Phai Nop');
+                break;
+            case 216<=384:
+                alert(thuThapCaNhan*0.2+ 'So Thue Ban Phai Nop');
+                break;
+            case 384<=624:
+                alert(thuThapCaNhan*0.25+ 'So Thue Ban Phai Nop');
+                break;
+            default:
+                alert(thuThapCaNhan*0.35+ 'So Thue Ban Phai Nop');
+                break;
+        }
+</script>
+</body>
+</html>

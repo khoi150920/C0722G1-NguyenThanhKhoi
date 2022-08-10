@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<>
+<p>Xep Hang Hoc Luc:</p>
+<p id="display">...</p>
+<script>
+    let bKt1 = +parseFloat(prompt('Nhap Bai Kiem Tra 1:'));
+    let bKt2 = +parseFloat(prompt('Nhap Bai Kiem Tra 2:'));
+    let bKt3 = +parseFloat(prompt('Nhap Bai Kiem Tra 3:'));
+    let dKt = (bKt1 + bKt2 + bKt3) / 3;
+    if (dKt >= 8) {
+        document.getElementById('display').innerHTML= + dKt + 'Xep Loai Gioi';
+    } else if (dKt >= 6) {
+        document.getElementById('display' ).innerHTML=+ dKt + 'Xep Loai Kha';
+    } else {
+        document.getElementById('display').innerHTML= dKt + 'Xep Loai Trung Binh';
+    }
+</script>
+</body>
+</html>
