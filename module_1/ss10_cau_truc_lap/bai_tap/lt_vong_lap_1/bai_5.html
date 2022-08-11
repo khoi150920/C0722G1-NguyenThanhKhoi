@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let fibonacci=0;
+    let a = 0;
+    let b = 1;
+    let total = a+b+fibonacci;
+    let text = a+','+b+','
+    for (let i = 0; i <= 20; i++) {
+        fibonacci = a + b;
+        a = b;
+        b = fibonacci;
+        total+=fibonacci
+        text+=fibonacci+','
+    }document.write(total+'<br>');
+    document.write(text);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let fibonacci;
+    let a=0;
+    let b=1;
+    let text=a+'<br>'+b+'<br>';
+    for (let i = 0; i <=20 ; i++) {
+        fibonacci = a + b;
+        a = b;
+        b = fibonacci;
+    }
+    for (fibonacci=1;fibonacci<=20;fibonacci++){
+        if (fibonacci%5==0){
+            document.write(fibonacci);
+            break;
+        }
+    }
+</script>
+
+</body>
+</html>

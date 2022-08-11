@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt('Nhap So Nguyen To:'));
+    let count = 0;
+    let dem = 0;
+    let text = "";
+    while (count < number) {
+        for (var j = 2; j < number; j++) {
+            if (number % j === 0) {
+                dem = dem + 1;
+            }
+        }
+        if (dem === 0) {
+            count = count + 1;
+            text += number + "<br>";
+        }
+        number = number + 1;
+    }
+    document.write(text);
+</script>
+
+</body>
+</html>
