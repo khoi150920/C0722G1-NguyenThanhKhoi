@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let cDoc =prompt('Nhap Chieu Doc');
+    let cNgang =prompt('Nhap Chieu Ngang');
+    let text = "";
+    for (let i = 1; i < cDoc; i++) {
+        for (let j = 1; j <= cNgang; j++) {
+            if (i == 1 || i == cDoc - 1 || j == 1 || j == cNgang) {
+                text += '*';
+            } else {
+                text += '&nbsp&nbsp';
+            }
+        }
+        text += '<br>'
+    }
+    document.write(text)
+</script>
+</body>
+</html>

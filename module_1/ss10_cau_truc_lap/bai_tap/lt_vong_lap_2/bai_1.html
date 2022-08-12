@@ -5,6 +5,19 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let fibonnaci=prompt('Nhap Day So Can Tim:');
+    let a=0;
+    let b=1;
+    let text=a+'<br>'+b+'<br>';
+    for (let i = 0; i <=fibonnaci ; i++) {
+        fibonacci=a+b;
+        a=b;
+        b=fibonacci;
+        text+=fibonacci+'<br>'
+    }
+    document.write(text);
+</script>
 
 </body>
 </html>
