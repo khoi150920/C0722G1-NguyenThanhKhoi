@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let numbers=[1,2,4,15,7,11,9,17,6,20];
+    let max=0;
+    let viTri;
+    for (let i = 0; i <=numbers.length ; i++) {
+        if (numbers[i]>max){
+            max=numbers[i];
+            viTri=i;
+        }
+    }document.write('Vi Tri:'+viTri+'So Lon Nhat:'+max);
+</script>
+
 </body>
 </html>

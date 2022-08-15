@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
+<form>
+    <input type="text" id="disPlay">
+    <input type="button" onclick="dich()" value="Dich">
+    <div id="ketQua">...</div>
+</form>
 <body>
-$END$
+<script>
+    let tAnh = ['apple', 'banana'];
+    let tViet = ['tao', 'em thich an chuoi'];
+
+    function dich() {
+        let disPlay = document.getElementById('disPlay').value;
+        for (let i = 0; i < tAnh.length; i++) {
+            if (tAnh[i] === disPlay) {
+                document.getElementById('ketQua').innerHTML = tViet[i];
+                break;
+            }  else {
+                document.getElementById('ketQua').innerHTML = 'Khong Co Tu nay'
+            }
+        }
+    }
+
+</script>
+
 </body>
 </html>
