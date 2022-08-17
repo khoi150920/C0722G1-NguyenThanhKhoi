@@ -4,7 +4,25 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<p id="disPlay"></p>
+<p id="disPlay1"></p>
 <body>
+
+<script>
+    let a = [
+        [1, 2, 1, 24],
+        [8, 11, 9, 4],
+        [7, 0, 7, 27],
+        [7, 4, 28, 14],
+        [3, 10, 26, 7]
+    ];
+    let check='';
+    for (let i = 0; i <a.length ; i++) {
+        for (let j = 0; j <a[i] ; j++) {
+            check+=a[i][j]+'&nbsp&nbsp';
+        }check+='<br>'
+    }document.getElementById('disPlay').innerHTML=check;
+</script>
 
 </body>
 </html>

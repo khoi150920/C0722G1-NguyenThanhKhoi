@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let size1 = +prompt('Nhap Size Chuoi1:')
+    let arr1 = '';
+    for (let a = 1; a <= size1; a++) {
+        arr1 = +prompt('Nhap Vao Chuoi:' + a);
+    }
+    let size2 = +prompt('Nhap Size Chuoi2:')
+    let arr2 = '';
+    for (let b = 1; b <= size2 ; b++) {
+        arr2 = +prompt('Nhap Vao Chuoi2:'+ b)
+    }
+    let result = false;
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1.length === arr2.length) {
+            if (arr1[i] === arr2[i]) {
+                result = true
+            } else {
+                result = false
+                break;
+            }
+        }
+    }
+    if (result == true) {
+        alert('Giong Nhau');
+    } else {
+        alert('Khac Nhau');
+    }
+</script>
+
+</body>
+</html>
