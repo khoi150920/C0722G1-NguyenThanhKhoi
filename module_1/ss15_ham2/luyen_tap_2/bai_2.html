@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<script>
+    function dienTich() {
+        let dienTich = nhapR * nhapR * Math.PI;
+        document.write('Dien Tich:' + dienTich + '<br>');
+    }
+
+    function chuVi() {
+        let chuVi = 2 * nhapR * Math.PI;
+        document.write("Chu Vi:" + chuVi);
+    }
+
+    let nhapR = +prompt('Nhap Ban Kinh:');
+    dienTich((nhapR));
+    chuVi((nhapR));
+</script>
+</body>
+</html>

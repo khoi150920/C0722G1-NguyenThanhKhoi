@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function valueMin(num) {
+        let min=num[0];
+        for (let i = 0; i < num.length; i++) {
+            if (num[i] <=num[0]) {
+                min = num[i];
+            }
+        }return min;
+    }
+    let num = [];
+    for (let j = 0; j < 3; j++) {
+        num[j] = +prompt('Nhap Vao So:' + (j + 1));
+    }
+    alert(valueMin(num));
+
+
+
+</script>
+
+</body>
+</html>

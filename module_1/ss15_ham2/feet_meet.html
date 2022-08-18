@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
+<div id="foot"></div>
+<div id="meter"></div>
 <body>
-$END$
+<script>
+    function footToMeter(meter) {
+        meter = 3.279 * foot;
+        document.getElementById('foot').innerHTML=meter+':Meter';
+        return meter;
+    }
+    function meterToFoot(foot) {
+        foot = 0.305 * meter;
+        document.getElementById('meter').innerHTML=foot+':Foot';
+        return foot;
+    }
+    let foot= +prompt('Nhap Foot:');
+    let meter=+prompt('Nhap Meter:');
+    footToMeter(foot);
+    meterToFoot(meter);
+</script>
+
 </body>
 </html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    function ktMang(mang) {
+        let dem=0;
+        let kyTu=+prompt('Nhap Vao Ky Tu De KT:');
+        for (let i = 0; i < mang.length; i++) {
+            if (kyTu==mang[i]){
+                dem++;
+            }
+        }if (dem==0){
+            alert('-1');
+        }else {
+          alert(dem);
+        }
+    }
+    let num = ['1', '2', "3", "3", '4', '5',"5","5"];
+    ktMang(num)
+</script>
+</html>

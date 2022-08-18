@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let text1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let text2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+
+    function checkText() {
+        for (let i = 0; i < text1.length; i++) {
+            if (nhapVao == text2[i]) {
+                document.write(text1[i]);
+                return nhapVao;
+            }
+        }
+    }
+
+    let nhapVao = prompt('Nhap Chom Sao');
+    checkText();
+</script>
+
 </body>
 </html>
