@@ -9,7 +9,7 @@
 <div id="ketQua2">Do K</div>
 </body>
 <script>
-    class nhietDo {
+    class NhietDo {
         constructor(doC) {
             this.doC = doC;
         }
@@ -17,12 +17,12 @@
         doF() {
             return this.doC * 1.8 + 32;
         }
-        doK(){
+        doK(    ){
             return this.doC*273.15;
         }
     }
     let doC=25;
-    let nhietDoLa= new nhietDo(doC);
+    let nhietDoLa= new NhietDo(doC);
     document.getElementById('ketQua').innerHTML=('Do C sang Do F la:'+nhietDoLa.doF());
     document.getElementById('ketQua2').innerHTML=('Do F Sang Do K la:'+nhietDoLa.doK());
 </script>

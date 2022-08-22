@@ -11,14 +11,14 @@
 
 </body>
 <script>
-    class hinhChuNhat {
+    class HinhChuNhat {
         constructor(chieuDai, chieuRong) {
             this.chieuDai = chieuDai;
             this.chieuRong = chieuRong;
 
         }
 
-        dinTich() {
+        dienTich() {
             return this.chieuDai * this.chieuRong;
         }
 
@@ -34,9 +34,9 @@
 
     let chieuDai = +prompt('Nhap Chieu Dai');
     let chieuRong = +prompt('Nhap Chieu Rong');
-    let chuNhat = new hinhChuNhat(chieuDai, chieuRong);
-    document.getElementById('ketQua').innerHTML = ('Dien Tich la:' + chuNhat.dinTich() + '<br>' + chuNhat.chuVi());
-    chuNhat.veHinhChuNhat()
+    let chuNhat = new HinhChuNhat(chieuDai, chieuRong);
+    document.getElementById('ketQua').innerHTML = ('Dien Tich la:' + chuNhat.dienTich() + '<br>' + 'Chu Vi La:' + chuNhat.chuVi());
+    chuNhat.veHinhChuNhat();
 
 </script>
 </html>
