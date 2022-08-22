@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="chuNhat" hight="500px" width="250px"></canvas>
+<div id="ketQua"></div>
+
+
+</body>
+<script>
+    class hinhChuNhat {
+        constructor(chieuDai, chieuRong) {
+            this.chieuDai = chieuDai;
+            this.chieuRong = chieuRong;
+
+        }
+
+        dinTich() {
+            return this.chieuDai * this.chieuRong;
+        }
+
+        chuVi() {
+            return (this.chieuDai + this.chieuRong) * 2;
+        }
+
+        veHinhChuNhat() {
+            document.getElementById('chuNhat').getContext('2d').fillRect(0, 0, this.chieuDai, this.chieuRong);
+            document.getElementById('chuNhat').getContext('2d').fillRect(0, 0, this.chieuRong, this.chieuRong);
+        }
+    }
+
+    let chieuDai = +prompt('Nhap Chieu Dai');
+    let chieuRong = +prompt('Nhap Chieu Rong');
+    let chuNhat = new hinhChuNhat(chieuDai, chieuRong);
+    document.getElementById('ketQua').innerHTML = ('Dien Tich la:' + chuNhat.dinTich() + '<br>' + chuNhat.chuVi());
+    chuNhat.veHinhChuNhat()
+
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let Mydate = function (day,month,year) {
+        this.day = day;
+        this.month = month; // tạo tham số truyền vào//
+        this.year = year;
+
+        this.getDay = function () {
+            return this.day;
+        }
+        this.getMonth = function () {   // phương thức trả về//
+            return this.month;
+        }
+        this.getYear = function () {
+            return this.year;
+        }
+        this.setDay = function () {
+            this.day = day;
+        }
+        this.setMonth = function () { //Xây dựng phương thức thiết đặt lại giá trị các thuộc tính day, month, year//
+
+            this.month = month;
+        }
+        this.setYear=function () {
+            this.year = year;
+        }
+    };
+    let date =new Mydate(18,8,2022); // tạo đối tượng date và cập nhật giá trị cho các đối tuọng bằng từ khoá new//
+    let day=date.getDay();
+    let month=date.getMonth();    // truy cập phương thức của lớp date//
+    let year=date.getYear();
+    alert(day + "/" + month + "/" + year);
+
+</script>
+</html>

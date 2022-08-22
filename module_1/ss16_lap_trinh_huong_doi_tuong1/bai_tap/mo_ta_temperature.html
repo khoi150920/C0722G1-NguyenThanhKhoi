@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="ketQua">Do F</div>
+<div id="ketQua2">Do K</div>
+</body>
+<script>
+    class nhietDo {
+        constructor(doC) {
+            this.doC = doC;
+        }
+
+        doF() {
+            return this.doC * 1.8 + 32;
+        }
+        doK(){
+            return this.doC*273.15;
+        }
+    }
+    let doC=25;
+    let nhietDoLa= new nhietDo(doC);
+    document.getElementById('ketQua').innerHTML=('Do C sang Do F la:'+nhietDoLa.doF());
+    document.getElementById('ketQua2').innerHTML=('Do F Sang Do K la:'+nhietDoLa.doK());
+</script>
+</html>
