@@ -10,52 +10,54 @@
 <script>
     class TraiTao {
         constructor() {
-            this.khoiLuong=11;
+            this.khoiLuong = 11;
         }
     }
-    class ConNguoi{
-        constructor(ten,gioiTinh,canNang) {
-            this.ten=ten;
-            this.gioiTinh=gioiTinh;
-            this.canNang=canNang;
+
+    class ConNguoi {
+        constructor(ten, gioiTinh, canNang) {
+            this.ten = ten;
+            this.gioiTinh = gioiTinh;
+            this.canNang = canNang;
         }
-        noiChuyen(noi){
+
+        noiChuyen(noi) {
             console.log(noi);
-
         }
-        anTao(tao){
 
-            if(tao.khoiLuong>0){
+        anTao(tao) {
+            if (tao.khoiLuong > 0) {
                 this.canNang++;
                 tao.khoiLuong--;
-            }else {
+            } else {
                 this.noiChuyen('Het Tao Roi:')
             }
         }
-        ktKhoiLuong(tao){
+
+        ktKhoiLuong(tao) {
             console.log(this.canNang);
             console.log(tao.khoiLuong);
         }
-        ktThongTin(){
-           return  this.ten+this.gioiTinh+this.canNang;
+
+        ktThongTin() {
+            return this.ten + this.gioiTinh + this.canNang;
         }
     }
-    let adam= new ConNguoi('Adame','Nam',50);
-    let quaTao= new TraiTao();
-    let eva= new ConNguoi('Eva','Nu',50);
-    for (let i = 0; 0 <quaTao.khoiLuong ; i++) {
+
+    let adam = new ConNguoi('Adame', 'Nam', 50);
+    let quaTao = new TraiTao();
+    let eva = new ConNguoi('Eva', 'Nu', 50);
+    for (let i = 0; 0 < quaTao.khoiLuong; i++) {
         adam.anTao(quaTao);
-        console.log(quaTao.khoiLuong+'Adam an tao');
+        console.log(quaTao.khoiLuong + 'Adam an tao');
         console.log(adam.canNang);
         eva.anTao(quaTao);
-        console.log(quaTao.khoiLuong+'Eva an tao');
+        console.log(quaTao.khoiLuong + 'Eva an tao');
         console.log(eva.canNang);
     }
     console.log(adam.ktThongTin());
     console.log(eva.ktThongTin())
     adam.ktKhoiLuong(quaTao);
     eva.ktKhoiLuong(quaTao);
-
-
 </script>
 </html>
