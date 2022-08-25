@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let tuSo = [5, 2, 5];
+    let mauSo = [6, 3, 4];
+    let arr = [];
+    for (let i = 0; i < tuSo.length; i++) {
+        arr[i] = tuSo[i] / mauSo[i];
+    }
+    let max = arr[0];
+    let dem;
+    for (let j = 0; j < arr.length; j++) {
+        if (max < arr[j]) {
+            max = arr[j];
+            dem = [j]
+        }
+    }
+    document.write('So Lon Nhat La:' + tuSo[dem] + '/' + mauSo[dem] + 'Vi tri la:' + dem);
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let s = prompt('Nhap Ky Tu');
+    s = s.split('');
+    for (let i = 0; i < s.length; i++) {
+        for (let j = i + 1; j < s.length; j++) {
+            if (s[i] === s[j]) {
+                s.splice(j, 1);
+            }
+        }
+    }
+    document.write(s.length);
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let luong = +prompt('Nhap Luong:');
+    if (luong >= 15000000) {
+        thue = luong * 20 / 100;
+        document.write('So Thue Ban Phai Dong' + thue+'<br>');
+        luongRong = luong - thue;
+        document.write('Luong Rong Cua Ban' + luongRong);
+    } else if (luong >= 7000000) {
+        thue = luong * 10 / 100;
+        document.write('So Thue Ban Phai Dong:' + thue+'<br>');
+        luongRong = luong - thue;
+        document.write('Luong Rong Cua Ban' + luongRong);
+    } else {
+        thue = luong * 5 / 100;
+        document.write('So Thue Ban Phai Dong' + thue+'<br>');
+        luongRong = luong - thue;
+        document.write('Luong Rong Cua Ban:' + luongRong)
+    }
+
+</script>
+</html>
