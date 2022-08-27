@@ -9,20 +9,61 @@
 <body>
 </body>
 <script>
-    let danhsach;
-
-
+    let hoaDon = 0
+    let a
     do {
-        danhsach = +prompt('Chọn Đồ Uống \n 1.Cafe \n 2.Cam Vắt \n 3.Nước Ép Dép \n 4,.Nước Sông Hằng Ấn Độ \n 5.Nước Vip' +
-            '\n 6.Nước Lọc \n 7.Tao Không Uống');
-        let danhSach1 = ['Cafe', 'Cam Vắt', 'Nước Ép Dép', 'Nước Sông Hằng Ấn Độ', 'Nước Vip', 'Nước Lọc'];
-        let danhsach2 = [1, 2, 3, 4, 5, 6];
-        let giaTien = [1000, 2000, 3000, 4000, 5000, 6000,];
-        for (let i = 0; i <danhsach2.length ; i++) {
-            
+        a = prompt('menu' +'   '+
+            'cafe(1) ' +
+            'cam vắt(2) ' +
+            'nước ép cà rốt(3) ' +
+            'Nước ép Cà chua(4) ' +
+            'Nước lọc(5) ' +
+            'Nước dừa(6) ' +
+            'Thoát gọi món(7) ')
+        if (a>7){
+            alert('Món bạn gọi không có trong Menu! vui lòng gọi lại!')
+        }else {
+            switch (a) {
+                case '1':
+                    let slCafe = prompt('cafe' +
+                        ' giá: 20000' +
+                        ' bạn hãy nhập số lượng:')
+                    hoaDon += 20000 * slCafe;
+                    break
+                case '2':
+                    let slCamvat = prompt('cam vắt' +
+                        ' giá: 30000' +
+                        ' bạn hãy nhập số lượng:')
+                    hoaDon += 30000 * slCamvat;
+                    break
+                case '3':
+                    let slCarot = prompt('Nước ép cà rốt' +
+                        ' giá: 35000' +
+                        ' bạn hãy nhập số lượng:')
+                    hoaDon += 35000 * slCarot;
+                    break
+                case '4':
+                    let slCachua = prompt('Nước ép cà chua' +
+                        ' giá: 35000' +
+                        ' bạn hãy nhập số lượng:')
+                    hoaDon += 35000 * slCachua;
+                    break
+                case '5':
+                    let slNuocloc = prompt('Nước lọc' +
+                        ' giá: 35000' +
+                        ' hãy nhập số lượng:')
+                    hoaDon += 5000 * slNuocloc;
+                    break
+                case '6':
+                    let slNuocdua = prompt('Nước Dừa' +
+                        ' giá: 45000' +
+                        ' bạn hãy nhập số lượng:')
+                    hoaDon += 35000 * slNuocdua;
+                    break
+            }
         }
-    }
-
-    while ()
+    }while (a!=7);
+    console.log(a)
+    alert('Hoá đơn bạn phải trả là: '+hoaDon)
 </script>
 </html>

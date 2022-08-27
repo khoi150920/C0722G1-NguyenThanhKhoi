@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+    let size1 = +prompt('Nhap Size Chuoi1:')
+    let arr1 = [];
+    let dem = 0;
+    for (let i = 0; i < size1; i++) {
+        arr1[i] = prompt('phần tử của mảng' + (i + 1));
+    }
+    document.write(arr1.toString());
+    for (let j = 0; j < arr1.length - 1; j=j + 2) {
+        if (arr1[j] < arr1[j + 1]) {
+            dem++;
+        }
+    }
+    if (dem === arr1.length / 2) {
+        alert("OK");
+    } else {
+        alert('NO');
+    }
+
+</script>
 </html>

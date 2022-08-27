@@ -8,11 +8,20 @@
 
 </body>
 <script>
-    let x=4;
-    let y=5;
-    for (let i = 0; i < ; i++) {
-        
+    let ngang = prompt('Nhap chieu ngang');
+    let doc = prompt('Nhap chieu doc');
+    let text = '';
+    for (let i = 0; i < doc; i++) {
+        for (let j = 0; j < ngang; j++) {
+            if (i === 0 || i === doc-1||j===0||j===ngang-1) {
+                text += '*';
+            }else {
+                text+='&nbsp&nbsp';
+            }
+        }
+        text += '<br>';
     }
+    document.write(text);
 </script>
 
 </html>

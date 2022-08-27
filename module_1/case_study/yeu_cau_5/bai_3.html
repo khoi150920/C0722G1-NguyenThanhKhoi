@@ -2,9 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+    let cDai = parseInt(prompt('Nhap Chieu Dai'));
+    let cRong = parseInt(prompt('Nhap Chieu Rong'));
+    let array = new Array(cDai);
+    for (let i = 0; i < array.length; i++) {
+        array[i] = new Array();
+        for (let j = 0; j < cRong; j++) {
+            array[i][j] = parseInt(prompt('Nhap Cot' + i + 'Dong' + j));
+        }
+    }
+    let soLon=array[0][0];
+    let soNho=array[0][0];
+    for (let i = 0; i <array.length ; i++) {
+        for (let j = 0; j <cDai; j++) {
+            if (array[i][j]>soLon){
+                soLon=array[i][j];
+            }
+            else if (array[i][j]<soNho){
+                soNho=array[i][j];
+            }
+        }
+    }
+    document.write("So Lon Nhat Trong Mang 2D:"+soLon+"<br>");
+    document.write('So Nho Nhat Trong Mang 2D:'+soNho)
+</script>
 </html>

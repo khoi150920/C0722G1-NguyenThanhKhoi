@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Vẽ tam giác vuông cân rỗng có chiều cao h</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+    let h = prompt('nhập vào số cạnh tam giác')
+    for (let i =1 ; i<=h;i++){
+        for (let j = 1 ; j<=i;j++) {
+            if (i==1||j==i||j==1||i==h){
+                document.write('*')
+            }else {document.write('&nbsp&nbsp')}
+        }
+        document.write('<br>')
+    }
+</script>
 </html>

@@ -2,9 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+    let cDai = parseInt(prompt('Nhap Chieu Dai'));
+    let cRong = parseInt(prompt('Nhap Chieu Rong'));
+    let array = new Array(cDai);
+    for (let i = 0; i < array.length; i++) {
+        array[i] = new Array();
+        for (let j = 0; j < cRong; j++) {
+            array[i][j] = parseInt(prompt('Nhap Cot' + i + 'Dong' + j));
+        }
+    }
+    let dem = 0;
+    let arr2 = [];
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < cRong; j++) {
+            if (array[i][j] == 0) {
+                continue;
+            }
+
+            for (let j = 2; j < array[i][j]; j++) {
+                if (array[i][j] % j == 0) {
+                    dem++;
+                    break;
+                }
+            }
+            if (dem == 0) {
+                arr2.push(array[i][j])
+            }
+            dem = 0;
+        }
+    }
+    document.write(array+"<br>");
+    document.write(arr2+'<br>');
+    document.write('All:'+arr2.length+'So Nguyen Gom'+arr2)
+</script>
 </html>

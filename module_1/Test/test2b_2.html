@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
 </body>
+
+<script>
+
+   function kiemTra(chu) {
+       chu=chu.split('')
+       let nguyenAm=['u','w','e','r','t'];
+       let arr=[''];
+       for (let i = 0; i <chu.length ; i++) {
+           for (let j = 0; j <nguyenAm.length ; j++) {
+               if(chu[i]===nguyenAm[j]){
+                   arr.push(chu[i])
+               }
+           }
+       }return arr;
+   }
+   let chu = prompt("Nhap ky tu");
+   document.write(kiemTra(chu));
+</script>
 </html>

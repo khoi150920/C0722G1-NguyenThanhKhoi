@@ -8,12 +8,19 @@
 
 </body>
 <script>
-    let s1=["aabcc"];
-    let s2=['adcaa'];
+    let s1=['a','a','b','c','c'];
+    let s2=['a','d','c','a','a'];
+    let count=0;
     for (let i = 0; i <s1.length; i++) {
         for (let j = 0; j <s2.length; j++) {
-            if (){}
+            if (s1[i]===s2[j]){
+                document.write(s1+'<br>');
+                s2.splice(j,1);
+                document.write(s2+'<br>');
+                count++;
+                break;
+            }
         }
-    }
+    }document.write("commonCharacterCount(s1, s2) = "+count);
 </script>
 </html>
