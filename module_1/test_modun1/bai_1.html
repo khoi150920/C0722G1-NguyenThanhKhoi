@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+    let n = prompt('NhapVao:');
+    while (n > 50) {
+        n = prompt('Nhapp Vao Be Hon 50');
+    }
+    let array=[];
+    let sum=0;
+    let count=0;
+    for (let i = 0; i < n; i++) {
+        array[i]=prompt('Nhap Phan Tu');
+        if (i % 3 == 0 && array[i] % 5 == 0) {
+            count++;
+            sum+=array[i];
+        }
+    }document.write('Phan Tu Nhap Vao La:'+array+'<br>');
+    document.write('phần tử chia hết cho 5 ở vị trí chia hết cho 3'+sum/count);
+</script>
 </html>

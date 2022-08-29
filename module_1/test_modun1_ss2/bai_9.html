@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function daoNguoc(str) {
+        return str.split("").reverse().join("");
+    }
+
+    document.write(daoNguoc('Hello') + '<br>');
+
+    function chuHoa(str) {
+        return str.toUpperCase();
+    }
+
+    document.write(chuHoa('hello') + '<br>');
+
+    function chuThuong(str) {
+        return str.toLowerCase();
+    }
+
+    document.write(chuThuong('HELLO') + '<br>');
+
+    function hoaThuong(str) {
+        str = str.split("");
+        for (let i = 0; i < str.length; i++) {
+            if (str[i] === str[i].toUpperCase()) {
+                str[i] = str[i].toLowerCase();
+            } else {
+                str[i] = str[i].toUpperCase();
+            }
+        }
+        return str.join("");
+    }
+
+    document.write(hoaThuong(prompt('Nhap Vao')));
+
+</script>
+</html>

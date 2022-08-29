@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Maytinh {
+        constructor(ma, ten, hang, gia) {
+            this.ma = ma;
+            this.ten = ten;
+            this.hang = hang;
+            this.gia = gia;
+        }
+
+        getMa() {
+            return this.ma;
+        }
+
+        getTen() {
+            return this.ten;
+        }
+
+        getHang() {
+            return this.hang;
+        }
+
+        getGia() {
+            return this.gia;
+        }
+
+        setMa(ma) {
+            this.ma = ma;
+        }
+
+        setTen(ten) {
+            this.ten = ten;
+        }
+
+        setHang(hang) {
+            this.hang = hang;
+        }
+
+        setGia(gia) {
+            this.gia = gia;
+        }
+    }
+    let mayTinh = new Maytinh('222','Model2021','MSI','500$');
+    let ma= mayTinh.getMa();
+    let ten=mayTinh.getTen();
+    let hang=mayTinh.getHang();
+    let gia=mayTinh.getGia();
+    document.write(ma+ten+hang+gia);
+</script>
+</html>
